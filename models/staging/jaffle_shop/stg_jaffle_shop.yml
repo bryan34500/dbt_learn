@@ -22,7 +22,14 @@ models:
                 - placed
                 - return_pending
       - name: customer_id
+        description: desctioasdfakjsdvnkjvnzxkjv
         tests:
           - relationships:
               to: ref('stg_customers')
               field: customer_id 
+  - name: stg_payments
+    columns: 
+      - name: payment_method
+        description: Type de méthode de paiement
+      - name: amount
+        description: '{{doc("payment_amount")}}'
